@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20160926140057) do
 
   create_table "candidates", force: :cascade do |t|
     t.string   "name"
-    t.string   "party"
     t.integer  "votes",      default: 0
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false

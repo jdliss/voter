@@ -1,33 +1,17 @@
 <h2>Candidates</h2>
 
-<p>1. Hillary Clinton (Democratic Party)</p>
-<p>2. Donald J. Trump (Republican Party)</p>
-<p>3. Gary Johnson (Libertarian Party)</p>
-<p>4. Dr. Jill Stein (Green Party)</p>
-<p>5. Darell Castle (Constitution Party of the US)</p>
-<p>6. Evan McMullin (Independent)</p>
-<p>7. Gloria LaRiva (Party of Socialism and Liberation)</p>
-<p>8. Rocky de la Fuente (Reform Party USA)</p>
-<p>9. Emidio Soltysik (Socialist Party USA)</p>
-<p>10. Alyson Kennedy (Socialist Workers Party)</p>
-<p>11. Frank Atwood (Approval Voting Party - Colorado)</p>
-<p>12. Scott Copeland (Constitution Party of Idaho-Texas)</p>
-<p>13. Richard Duncan (Independent)</p>
-<p>14. Princess Khadijah Jacob Fambro (Revolutionary Party)</p>
-<p>15. Jim Hedges (Prohibition Party)</p>
-<p>16. Tom Hoefling (America's Party)</p>
-<p>17. Lynn Kahn (Independent)</p>
-<p>18. Chris Keniston (Veterans Party of America)</p>
-<p>19. Kyle Kopitke (Independent American Party)</p>
-<p>20. Laurence Koltikoff (Independent)</p>
-<p>21. David Limbaugh (Independent)</p>
-<p>22. Bradford Lyttle (US Pacifist Party)</p>
-<p>23. Joseph Maidonado (Independent)</p>
-<p>24. Mike Maturen (American Solidarity Party)</p>
-<p>25. Monica Moorhead (Workers World Party)</p>
-<p>26. Ryan Scott (Independent)</p>
-<p>27. Rod Silva (Nutrition Party)</p>
-<p>28. Peter Skewes (American Party of SC)</p>
-<p>29. Mike Smith (Independent)</p>
-<p>30. Dan Vacek (Legal Marijuana Now Party)</p>
-<p>31. Jerry White (Socialist Equality Party)</p>
+<%= form_for(:candidate) do |f| %>
+  <%= f.label "1st Choice" %>
+  <%= f.collection_select :candidate_id, @candidates, :id, :name, prompt: "Select a Candidate" %>
+  <br>
+  <%= f.label "2nd Choice" %>
+  <%= f.collection_select :candidate_id, @candidates, :id, :name, prompt: "Select a Candidate" %>
+  <br>
+  <%= f.label "3rd Choice" %>
+  <%= f.collection_select :candidate_id, @candidates, :id, :name, prompt: "Select a Candidate" %>
+  <br>
+  <%= f.label "4th Choice" %>
+  <%= f.collection_select :candidate_id, @candidates, :id, :name, prompt: "Select a Candidate" %>
+  <br>
+  <%= f.submit "Submit" %>
+<% end %>
