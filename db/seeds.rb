@@ -1,7 +1,33 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Candidate.create([
+  { name: "Hillary Clinton", party: "Democratic Party" },
+  { name: "Donald J. Trump", party: "Republican Party" },
+  { name: "Gary Johnson", party: "Libertarian Party" },
+  { name: "Dr. Jill Stein", party: "Green Party" },
+  { name: "Darell Castle", party: "Constitution Party of the US" },
+  { name: "Evan McMullin", party: "Independent" },
+  { name: "Gloria LaRiva", party: "Party of Socialism and Liberation" },
+  { name: "Rocky de la Fuente", party: "Reform Party USA" },
+  { name: "Emidio Soltysik", party: "Socialist Party USA" },
+  { name: "Alyson Kennedy", party: "Socialist Workers Party" },
+  { name: "Frank Atwood", party: "Approval Voting Party - Colorado" },
+  { name: "Scott Copeland", party: "Constitution Party of Idaho-Texas" },
+  { name: "Richard Duncan", party: "Independent" },
+  { name: "Princess Khadijah Jacob Fambro", party: "Revolutionary Party" },
+  { name: "Jim Hedges", party: "Prohibition Party" },
+  { name: "Tom Hoefling", party: "America's Party" },
+  { name: "Lynn Kahn", party: "Independent" },
+  { name: "Chris Keniston", party: "Veterans Party of America" },
+  { name: "Kyle Kopitke", party: "Independent American Party" },
+  { name: "Laurence Koltikoff", party: "Independent" },
+  { name: "David Limbaugh", party: "Independent" },
+  { name: "Bradford Lyttle", party: "US Pacifist Party" },
+  { name: "Joseph Maidonado", party: "Independent" },
+  { name: "Mike Maturen", party: "American Solidarity Party" },
+  { name: "Monica Moorhead", party: "Workers World Party" },
+  { name: "Ryan Scott", party: "Independent" },
+  { name: "Rod Silva", party: "Nutrition Party" },
+  { name: "Peter Skewes", party: "American Party of SC" },
+  { name: "Mike Smith", party: "Independent" },
+  { name: "Dan Vacek", party: "Legal Marijuana Now Party" },
+  { name: "Jerry White", party: "Socialist Equality Party" }
+])
